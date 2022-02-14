@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+h1 {
+  background-color: aqua;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.main-container{
+  padding: 3rem;
+}
