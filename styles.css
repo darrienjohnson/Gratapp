@@ -4,12 +4,58 @@
   padding: 0;
 }
 
+/*----------Header of Page---------*/
 h1 {
   background-color: aqua;
-  margin: 3rem auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 3rem 2rem;
+}
+/*---------- Main Page Container---------*/
+.main-container{
+  display: grid;
+  grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
+  border-radius: 1rem;
+  padding: 3rem;
+  background-color: salmon;
+}
+
+.each-container{
+  padding: 1rem;
+}
+/*---------------- Bill--------------*/
+
+.bill-container{
+  background-color: crimson;
+}
+.bill-container input{
+  width: 95%;
+  text-align: end;
+}
+
+/*-------------Tip Selection-----------*/
+
+.tip-container{
+  background-color: forestgreen;
+}
+.tip-div-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+input{
   text-align: center;
 }
 
-.main-container{
-  padding: 3rem;
+/*---------- Number of People---------*/
+
+.tpeople-container{
+  background-color: khaki;
+}
+
+/*-----Amount for Tip and Tip+Total------*/
+
+.total-container{
+  background-color: saddlebrown;
 }
