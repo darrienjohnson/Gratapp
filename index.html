@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../../normalize.css">
+  <!-- <link rel="stylesheet" href="../../../normalize.css"> -->
   <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,11 +31,11 @@
     <section class="tip-container each-container">
       <h2>Select Tip %</h2>
       <div class="tip-div-container">
-        <button type="button" class="tip-button button tip-percentage">5%</button>
-        <button type="button" class="tip-button button tip-percentage">10%</button>
-        <button type="button" class="tip-button button tip-percentage">15%</button>
-        <button type="button" class="tip-button button tip-percentage">20%</button>
-        <button type="button" class="tip-button button tip-percentage">25%</button>
+        <button type="button" class="tip-button button">5%</button>
+        <button type="button" class="tip-button button">10%</button>
+        <button type="button" class="tip-button button">15%</button>
+        <button type="button" class="tip-button button">20%</button>
+        <button type="button" class="tip-button button">25%</button>
         <input type="text" id="custom" name="custom" placeholder="custom" class="tip-percentage">
       </div>
     </section>
@@ -62,7 +62,7 @@
           <p>/ person</p>
         </div>
         <div class="tip-person-amount">
-          <p class="number-amount">$0.00</p>
+          <p class="output-amount">$0.00</p>
         </div>
       </div>
   
@@ -74,7 +74,7 @@
           <p>/ person</p>
         </div>
         <div class="tip-person-amount">
-          <p class="number-amount">$0.00</p>
+          <p class="total-output-amount">$0.00</p>
         </div>
       </div>
       <button type="button" class="reset-button button">Reset</button>
@@ -82,5 +82,6 @@
     </section>
     </main>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
