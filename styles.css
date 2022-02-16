@@ -4,58 +4,140 @@
   padding: 0;
 }
 
-/*----------Header of Page---------*/
+body {
+  background: #262625;
+  font-family: space mono, sans-serif;
+}
+
+button, input{
+  font-family: space mono, sans-serif;
+  border: none;
+}
+
+input{
+  text-align: center;
+  border-radius: 5px;
+  background-color: #DBDBDB;
+  padding: .50rem 1rem;
+  font-size: 16px;
+}
+
+
+/*---------------------------
+Header of Page
+------------------------------*/
+
 h1 {
-  background-color: aqua;
   margin: 0 auto;
   text-align: center;
-  padding: 4rem 3rem 2rem;
+  padding: 1rem 1.5rem 1rem;
+  font-size: 50px;
+  color: #DEFF28;
+  background-color: #262625;
 }
-/*---------- Main Page Container---------*/
+/*----------------------------------
+Main Page Container
+------------------------------------*/
+
+/*GRID*/
 .main-container{
   display: grid;
   grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
   border-radius: 1rem;
   padding: 3rem;
-  background-color: salmon;
+  background-color: whitesmoke;
 }
-
+/*Each Section of Page*/
 .each-container{
   padding: 1rem;
+  font-size: 10px;
 }
-/*---------------- Bill--------------*/
+/*--------------------------------
+Bill
+---------------------------------*/
 
 .bill-container{
-  background-color: crimson;
+  background-color: whitesmoke;
 }
 .bill-container input{
   width: 95%;
   text-align: end;
 }
 
-/*-------------Tip Selection-----------*/
+/*-----------------------------------
+Tip Selection
+------------------------------------*/
 
 .tip-container{
-  background-color: forestgreen;
+  background-color: whitesmoke;
 }
+
+/*GRID*/
 .tip-div-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+/*Tip % Buttons*/
+.tip-percentage{
+  width: 100%;
+  height: 100%;
+  background-color: #262625;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: .5rem 0;
+}
 
-input{
+
+
+/*-----------------------------------
+Number of People
+------------------------------------*/
+
+.tpeople-container{
+  background-color: #whitesmoke;
+}
+
+.tpeople-container input{
+  width: 95%;
   text-align: center;
 }
 
-/*---------- Number of People---------*/
-
-.tpeople-container{
-  background-color: khaki;
-}
-
-/*-----Amount for Tip and Tip+Total------*/
+/*------------------------------------
+Amount for Tip and Tip+Total
+-------------------------------------*/
 
 .total-container{
-  background-color: saddlebrown;
+  background-color: #262625;
+  border-radius:15px;
+}
+
+/*Tip,Total,Reset button Column display*/
+
+.total-div-container{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Seperation between amount and $0.00*/
+
+.total-amount, .tip-amount{
+  display: flex;
+  justify-content: space-between;
+  padding: .75rem;
+  color: white;
+}
+.number-amount{
+  color: #DEFF28;
+  font-size: 2rem;
+}
+.reset-button{
+  width: 100%;
+  height: 100%;
+  background-color: #DEFF28;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: .5rem 0;
 }
