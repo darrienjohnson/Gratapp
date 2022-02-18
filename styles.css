@@ -89,7 +89,7 @@ Tip Selection
   padding: .5rem 0;
 }
 
-.tip-percentage{
+.custom-button{
   width: 100%;
   height: 100%;
   background-color: #262625;
@@ -138,11 +138,11 @@ Amount for Tip and Tip+Total
   padding: .75rem;
   color: white;
 }
-.output-amount{
+#amountOutput{
   color: #DEFF28;
   font-size: 2rem;
 }
-.total-output-amount{
+#totalOutput{
   color: #DEFF28;
   font-size: 2rem;
 }
