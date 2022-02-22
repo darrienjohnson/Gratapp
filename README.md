@@ -1,2 +1,2 @@
-# Tipper-App
+# GRAT-app
  tip calculator app
