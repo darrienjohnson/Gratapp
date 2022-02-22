@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 body {
   background: #262625;
   font-family: space mono, sans-serif;
@@ -76,7 +77,6 @@ Tip Selection
 .tip-div-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* gap: 1rem; */
 }
 /*Tip % Buttons*/
 .tip-button{
@@ -87,6 +87,14 @@ Tip Selection
   font-size: 1.5rem;
   border-radius: 5px;
   padding: .5rem 0 1rem;
+  cursor: pointer;
+}
+.tip-button:hover{
+  background-color: #c3df23;
+  position: relative;
+  left: -1px;
+  top: -1px;
+  padding: 0px;
 }
 
 .custom-button{
@@ -96,12 +104,11 @@ Tip Selection
   color: #DEFF28;
   font-size: 1.5rem;
   border-radius: 5px;
-  padding: .5rem 0;
+  padding: .5rem 0 1rem;
 }
 .active-button{
   background-color: #DEFF28;
   color: black;
-  border: solid .125rem black;
 }
 
 
@@ -121,6 +128,9 @@ Number of People
 /*------------------------------------
 Amount for Tip and Tip+Total
 -------------------------------------*/
+#outputSection{
+
+}
 
 .total-container{
   background-color: #262625;
@@ -158,4 +168,41 @@ Amount for Tip and Tip+Total
   font-size: 1.5rem;
   border-radius: 5px;
   padding: .5rem 0;
+  cursor: pointer;
+}
+
+.reset-button:hover{
+  background-color: #c3df23;
+}
+
+/*-----------------Media Queries
+-----------------------------------*/
+
+@media only screen and (min-width: 600px){
+  .main-container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    margin: 0 auto;
+  }
+  .bill-container {
+    order: 1;
+  }
+  .tip-container {
+    order: 1;
+  }
+    .tpeople-container {
+    order: 1;
+  }
+    .total-container {
+    order: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3;
+    grid-column-start: 2;
+  }
+  .total-amount{
+    margin-bottom: 10rem;
+  }
 }
